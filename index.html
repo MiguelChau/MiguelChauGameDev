@@ -1,427 +1,265 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Miguel Chau - Portfolio </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Miguel Chau</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-  <link rel="stylesheet" href="./src/css/reset.css">
-  <link rel="stylesheet" href="./src/css/estilos.css">
-  <link rel="stylesheet" href="./src/css/responsivo.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css ">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <script src="./src/js/index.js" defer></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
+
 </head>
 
 <body>
-  <header class="cabecalho">
-    <h1>Portfolio Miguel Chau GameDev</h1>
+    <h1>Portfolio Miguel Chau</h1>
 
-    <nav class="menu">
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/jorge-miguel-chau-peixoto-995b22181/" target="_blank"> LinkdeIn </a>
-        </li>
-      </ul>
-    </nav>
+    <div class="card active" id="card-1">
+        <h2>Shooter Robots</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WLcdfXLxtKI?si=9eovHo3p4ezNcDdD"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="description">Step into the boots of Mudrock in this thrilling third-person shooter set in a futuristic
+            space base overrun by Wraith Robots. The gameplay revolves around survival mechanics: players must eliminate
+            waves of enemies with limited health that cannot be replenished, making every decision critical. Developed
+            in C++, the game features automatic doors, a health bar, dynamic animations, and sound effects for both the
+            player and enemies. Enemy behavior is powered by Unreal Engine's AI Behavior Tree system, adding depth and
+            challenge to their actions.
+        </p>
+    </div>
+
+    <div class="card" id="card-2">
+        <h2>Medieval 3rd Combat Person</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3Vo3BQOQ2kE?si=KvAsgGZq-sDLZvcI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="description">An open-world third-person combat game set in a medieval fantasy environment, developed
+            in Unity. Players engage in dynamic battles against enemies using an advanced state-machine system to manage
+            attack and defense mechanics for both the player and AI. The game also features a climbing system, allowing
+            the player to scale structures and terrain such as houses and mountains. This prototype demonstrates the
+            integration of complex gameplay mechanics and showcases innovative interactions in a 3D environment.
+        </p>
+    </div>
+
+    <div class="card" id="card-2">
+        <h2>FPS Shooter</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4JzyeIX1scw?si=ehL6H0EY7NqyV0NI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-    <div class="informacoes">
-      <p>Hello, I'm Miguel Chau, a Junior GameDev passionate about tec and games.</p>
-      <p>I'm always challenging myself into new projects and gathering knowledge to become a better version of
-        myself.</p>
-      <p>I'm into watching animes, working out, doing karate and spend time with my family too 😊</p>
+        </div>
+        <p class="description">A fast-paced first-person shooter developed in Unreal Engine, where players must defeat
+            all enemies before time runs out. I implemented various gameplay features, including a user interface to
+            display health, ammo management (reload and depletion), a countdown timer, and the remaining enemy count.
+            Enemy AI uses a simple behavior system, while animations and sound effects enhance the player's immersive
+            experience.
+        </p>
     </div>
 
 
 
-  </header>
+    <div class="card" id="card-3">
+        <h2>Quiz Game</h2>
 
-
-
-  <main>
-    <div class="pokedevs">
-      <div class="cartoes-pokedev">
-        <div class="cartao-pokedev tipo-eletrico aberto" id="cartao-devchu">
-          <div class="cartao-topo">
-            <div class="detalhes">
-              <h2 class="nome">Infinite Spaceshooter</h2>
-
-            </div>
-
-            <span class="tipo"><a href="https://miguel-chau.itch.io/infinite-spaceshooter"> Play Here</a></span>
-
-            <div class="cartao-imagem">
-              <video src="./src/imagens/Untitled design.mp4" controls width="280px" height="
-                150px" poster="" autoplay muted></video>
-            </div>
-          </div>
-
-          <div class="cartao-informacoes">
-            <div class="descricao">
-              <h3>Description</h3>
-
-              <p>
-                A top-down 2D pixel art game focused on achieving the highest score possible by surviving waves of
-                enemies. Players must destroy incoming enemies by shooting at them while avoiding damage to keep their
-                spaceship intact. Developed using Unity Engine, the game implements the new input system for precise
-                controls and features enemy pathfinding with waypoints to create dynamic and challenging
-                movement patterns.
-                <a href="https://miguel-chau.itch.io/infinite-spaceshooter" target="_blank"> Play Here </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="cartao-pokedev tipo-agua" id="cartao-scriptle">
-          <div class="cartao-topo">
-            <div class="detalhes">
-              <h2 class="nome">Quiz Game</h2>
-
-            </div>
-
-            <span class="tipo"> <a
-                href="https://play.unity.com/en/games/3e74556a-7853-4914-86da-adda994c771e/webgl-builds"
-                target="_blank"> Play Here</a></span>
-
-            <div class="cartao-imagem">
-              <iframe width="270" height="150" src="https://www.youtube.com/embed/S6lM4ILlrzM?si=mzlIgrk9A5z8lYwF"
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/S6lM4ILlrzM?si=8-oNsBJ-72MhziRP"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </div>
-
-          <div class="cartao-informacoes">
-            <div class="descricao">
-              <h3>Description</h3>
-              <p>
-                A quiz game with a clean and intuitive UI, featuring 10 random history questions about Portugal. Players
-                earn 10 points for each correct answer and lose 10 points for each incorrect one. The challenge is to
-                answer all questions correctly to achieve the highest score. Developed using Unity Engine, the game
-                leverages Scriptable Objects to manage the question system, ensuring flexibility and easy expansion.
-              </p>
-            </div>
-          </div>
         </div>
+        <a href="https://play.unity.com/en/games/3e74556a-7853-4914-86da-adda994c771e/webgl-builds" target="_blank"
+            class="card-link-button">Play Here </a>
+        <p class="description">A quiz game with a clean and intuitive UI, featuring 10 random history questions about
+            Portugal. Players earn
+            10 points for each correct answer and lose 10 points for each incorrect one. The challenge is to answer all
+            questions correctly to achieve the highest score. Developed using Unity Engine, the game leverages
+            Scriptable Objects to manage the question system, ensuring flexibility and easy expansion.</p>
+    </div>
 
-        <div class="cartao-pokedev tipo-fogo" id="cartao-codevee">
-          <div class="cartao-topo">
-            <div class="detalhes">
-              <h2 class="nome">Survivor's Legacy</h2>
+    <div class="card active" id="card-1">
+        <h2>Survivors Legacy</h2>
 
-            </div>
-
-            <span class="tipo"> <a href="https://miguel-chau.itch.io/survivors-legacy" target="_blank"> Play Here
-              </a></span>
-
-            <div class="cartao-imagem">
-              <iframe width="270" height="150" src="https://www.youtube.com/embed/xU3vOrtGYVc?si=hi9kNybAb3jySdQ2"
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xU3vOrtGYVc?si=UEJmpw0qXSBCTL8Z"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </div>
+        </div>
+        <a href="https://miguel-chau.itch.io/survivors-legacy" target="_blank" class="card-link-button">Play Here</a>
 
-          <div class="cartao-informacoes">
-            <div class="descricao">
-              <h3>Description</h3>
-              <p>
-                A top-down 2D pixel art game where players must progress through three levels, each filled with enemies
-                that must be defeated to unlock the exit. The player can switch between three different weapons, collect
-                items, and use two special powers to survive. Developed using Unity Engine, the game incorporates the
-                new input system for seamless control. Enemy pathfinding includes radius detection to track the player's
-                movements. Additionally, it utilizes Unity's Universal Render Pipeline (URP) with lighting effects and
-                basic post-processing to enhance the visual quality.
-              </p>
-            </div>
-          </div>
+
+        <p class="description">A top-down 2D pixel art game where players must progress through three levels, each
+            filled with enemies that must be defeated to unlock the exit. The player can switch between three different
+            weapons, collect items, and use two special powers to survive. Developed using Unity Engine, the game
+            incorporates the new input system for seamless control. Enemy pathfinding includes radius detection to track
+            the player's movements. Additionally, it utilizes Unity's Universal Render Pipeline (URP) with lighting
+            effects and basic post-processing to enhance the visual quality.</p>
+    </div>
+
+    <div class="card active" id="card-1">
+        <h2>Infinite Space Shooter</h2>
+
+        <div class="video-container">
+            <video src="./src/imagens/Infinite Shooter.mp4" controls width="560" height="315"></video>
         </div>
 
-        <div class="cartao-pokedev tipo-grama" id="cartao-psycoder">
-          <div class="cartao-topo">
-            <div class="detalhes">
-              <h2 class="nome">Loop Wave FPS</h2>
+        <a href="https://miguel-chau.itch.io/infinite-spaceshooter" target="_blank" class="card-link-button">Play
+            Here</a>
 
-            </div>
+        <p class="description">A top-down 2D pixel art game where players must progress through three levels, each
+            filled with enemies that must be defeated to unlock the exit. The player can switch between three different
+            weapons, collect items, and use two special powers to survive. Developed using Unity Engine, the game
+            incorporates the new input system for seamless control. Enemy pathfinding includes radius detection to track
+            the player's movements. Additionally, it utilizes Unity's Universal Render Pipeline (URP) with lighting
+            effects and basic post-processing to enhance the visual quality.</p>
+    </div>
 
-            <span class="tipo"> <a
-                href="https://play.unity.com/en/games/00724ac5-fdbf-4460-a2b8-1fe6ccf1780f/fps-prototype-miguel-chau"
-                target="_blank"> Play Here</a></span>
+    <div class="card active" id="card-1">
+        <h2>Loop Wave FPS</h2>
 
-            <div class="cartao-imagem">
-              <iframe width="270" height="150" src="https://www.youtube.com/embed/0axAcC8yjYg?si=FszEaMIgPod4S_pi"
+        <div class="video-container">
+            <video src="./src/imagens/FPS Shooter unity (1).mp4" controls width="560" height="315"></video>
+        </div>
+
+        <a href="https://play.unity.com/en/games/00724ac5-fdbf-4460-a2b8-1fe6ccf1780f/fps-prototype-miguel-chau"
+            target="_blank" class="card-link-button">Play Here</a>
+        <p class="description">A 3D first-person shooter where players must survive waves of enemy robots. Players can
+            switch between two different weapons to efficiently take down enemies, aiming to survive for as long as
+            possible. Developed using Unity Engine, the game utilizes NavMeshAgent for enemy movement, featuring a
+            custom system for attack and follow distances. Enemy shooting mechanics are powered by Raycast logic,
+            ensuring precise and dynamic combat interactions.</p>
+    </div>
+
+    <div class="card active" id="card-1">
+        <h2>Building Village</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uKMPHCEqGrg?si=gqpI6YZvS6k5p1AU"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </div>
-
-          <div class="cartao-informacoes">
-            <div class="descricao">
-              <h3>Description</h3>
-              <p>
-                A 3D first-person shooter where players must survive waves of enemy robots. Players can switch between
-                two different weapons to efficiently take down enemies, aiming to survive for as long as possible.
-                Developed using Unity Engine, the game utilizes NavMeshAgent for enemy movement, featuring a custom
-                system for attack and follow distances. Enemy shooting mechanics are powered by Raycast logic, ensuring
-                precise and dynamic combat interactions.
-              </p>
-            </div>
-          </div>
         </div>
+        <p class="description">A top-down 2D game where players experience farm life by chopping wood, fishing, and
+            watering crops. To complete the game, players must gather enough materials to construct houses, all while
+            defending against enemies that appear throughout the journey. Developed using Unity Engine, the game
+            features a custom dialogue system built with Scriptable Objects for managing dialogue data. Enemy movement
+            is handled using the NavMeshAgent system, providing smooth pathfinding and challenging encounters.</p>
+    </div>
 
-        <div class="cartao-pokedev tipo-trevas" id="cartao-charmandev">
-          <div class="cartao-topo">
-            <div class="detalhes">
-              <h2 class="nome">Building Village</h2>
+    <div class="card active" id="card-1">
+        <h2>The Brave</h2>
 
-            </div>
-
-            <span class="tipo"> <a href="https://miguel-chau.itch.io/the-brave-rpg2d" target="_blank"> Play
-                Here</a></span>
-
-            <div class="cartao-imagem">
-              <iframe width="270" height="150" src="https://www.youtube.com/embed/uKMPHCEqGrg?si=GEDYDEv23apua5QG"
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KUcHjBoyO2w?si=qgDVdu-1b0t9nn61"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </div>
-
-          <div class="cartao-informacoes">
-            <div class="descricao">
-              <h3>Description</h3>
-              <p>
-                A top-down 2D game where players experience farm life by chopping wood, fishing, and watering crops. To
-                complete the game, players must gather enough materials to construct houses, all while defending against
-                enemies that appear throughout the journey. Developed using Unity Engine, the game features a custom
-                dialogue system built with Scriptable Objects for managing dialogue data. Enemy movement is handled
-                using the NavMeshAgent system, providing smooth pathfinding and challenging encounters.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="cartao-pokedev tipo-fada" id="cartao-devlypuff">
-        <div class="cartao-topo">
-          <div class="detalhes">
-            <h2 class="nome">The Brave</h2>
-
-          </div>
-
-          <span class="tipo"> <a href="https://miguel-chau.itch.io/the-brave-rpg2d" target="_blank"> Play
-              Here</a></span>
-
-          <div class="cartao-imagem">
-            <iframe width="270" height="150" src="https://www.youtube.com/embed/KUcHjBoyO2w?si=kqfqAFMyElI2i2oO"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
         </div>
 
-        <div class="cartao-informacoes">
-          <div class="descricao">
-            <h3>Description</h3>
-            <p>
-              A 2D pixel art RPG featuring crafting, talent trees, and equipment systems. The game takes place in a
-              single level where the player gathers resources, gains experience to learn new skills, and defeats enemies
-              in preparation for the final battle against the King. Developed using Unity Engine, the game implements a
-              StateMachine for both player and enemy behaviors, along with a Save and Load system using JSON for data
-              storage. Additionally, player and enemy stats are fully implemented, and unique boss mechanics provide an
-              engaging final challenge.
-            </p>
-          </div>
-        </div>
-      </div>
+        <a href="https://miguel-chau.itch.io/the-brave-rpg2d" target="_blank" class="card-link-button">Play Here</a>
 
-      <div class="cartao-pokedev tipo-drago" id="cartao-dragodev">
-        <div class="cartao-topo">
-          <div class="detalhes">
-            <h2 class="nome">Aeroasteroids Mobile</h2>
-          </div>
-          <span class="tipo">
-            <a href="https://miguel-chau.itch.io/fantasy-rpg" target="_blank">Play Here</a>
-          </span>
-          <div class="cartao-imagem">
-            <iframe width="270" height="150" src="https://www.youtube.com/embed/FfZx4wOAEK0?si=eDP4ssyBaqfVUCqt"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="cartao-informacoes">
-          <div class="descricao">
-            <h3>Description</h3>
-            <p>
-              A 2D mobile game with intuitive touchscreen controls, where players must dodge incoming asteroids while
-              their ship automatically throws grenades to destroy obstacles. The goal is to survive as long as possible
-              and achieve a high score. Developed using Unity Engine, the game features simple touchscreen mechanics,
-              dividing the screen into four sections for player movement and control.
-            </p>
-          </div>
-        </div>
-      </div>
+        <p class="description">A 2D pixel art RPG featuring crafting, talent trees, and equipment systems. The game
+            takes place in a single level where the player gathers resources, gains experience to learn new skills, and
+            defeats enemies in preparation for the final battle against the King. Developed using Unity Engine, the game
+            implements a StateMachine for both player and enemy behaviors, along with a Save and Load system using JSON
+            for data storage. Additionally, player and enemy stats are fully implemented, and unique boss mechanics
+            provide an engaging final challenge.</p>
+    </div>
 
-      <div class="cartao-pokedev tipo-cosmico" id="cartao-spacedev">
-        <div class="cartao-topo">
-          <div class="detalhes">
-            <h2 class="nome">Bomber Box</h2>
-          </div>
-          <span class="tipo">
-            <a href="https://play.unity.com/en/games/42fa8e6b-0535-4341-84e9-506d4e364f9a/build" target="_blank">Play
-              Here</a>
-          </span>
-          <div class="cartao-imagem">
-            <iframe width="270" height="150" src="https://www.youtube.com/embed/KyBx2e5CKjw?si=M7C6PJh5qQ2guPJl"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
+    <div class="card active" id="card-1">
+        <h2>Aesteroids Mobile</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FfZx4wOAEK0?si=_17o4IqQsKS2UDqd"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <div class="cartao-informacoes">
-          <div class="descricao">
-            <h3>Description</h3>
-            <p>
-              A 3D game where players strategically drop bombs on the correct boxes to earn the highest score. The
-              challenge lies in timing and precision to hit target boxes. Developed using Unity Engine, the game
-              includes a Main Menu UI where players can input their name, view the high score, and save their progress.
-              It also features three difficulty levels, which adjust the time available to achieve a high score,
-              increasing the challenge as the difficulty rises.
-            </p>
-          </div>
+        <p class="description">A 2D mobile game with intuitive touchscreen controls, where players must dodge incoming
+            asteroids while their ship automatically throws grenades to destroy obstacles. The goal is to survive as
+            long as possible and achieve a high score. Developed using Unity Engine, the game features simple
+            touchscreen mechanics, dividing the screen into four sections for player movement and control.</p>
+    </div>
+
+    <div class="card active" id="card-1">
+        <h2>Bomber Box</h2>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KyBx2e5CKjw?si=xjeBz-RPIayhDn9d"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-      </div>
 
+        <a href="https://play.unity.com/en/games/42fa8e6b-0535-4341-84e9-506d4e364f9a/build" target="_blank"
+            class="card-link-button">Play Here</a>
+        <p class="description">A 3D game where players strategically drop bombs on the correct boxes to earn the highest
+            score. The challenge lies in timing and precision to hit target boxes. Developed using Unity Engine, the
+            game includes a Main Menu UI where players can input their name, view the high score, and save their
+            progress. It also features three difficulty levels, which adjust the time available to achieve a high score,
+            increasing the challenge as the difficulty rises.</p>
+    </div>
 
-      <div class="cartao-pokedev tipo-selvagem" id="cartao-monsterdev">
-        <div class="cartao-topo">
-          <div class="detalhes">
-            <h2 class="nome">Diana's World</h2>
-          </div>
-          <span class="tipo">
-            <a href="https://play.unity.com/en/games/fff19bb8-e014-4e6b-b87f-69ab2cfb4caa/webgl-builds"
-              target="_blank">Play Here</a>
-          </span>
-          <div class="cartao-imagem">
-            <iframe width="270" height="150" src="https://www.youtube.com/embed/OxPqtSf_M20?si=2bAfHxv8meU2xsUk"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
+    <div class="card active" id="card-1">
+        <h2>Diana's World</h2>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OxPqtSf_M20?si=oEF9PSi9TFpYu-sd"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <div class="cartao-informacoes">
-          <div class="descricao">
-            <h3>Description</h3>
-            <p>
-              3D open-world fantasy game where players take on the role of a mage on an epic journey to defeat a dragon.
-              Players can explore a vast world, gain new powers, and battle various enemies to complete the ultimate
-              quest. Developed using Unity Engine, the game features a save and checkpoint system utilizing JSON for
-              data management. Additionally, it incorporates an enemy state machine and pathfinding using waypoints,
-              ensuring dynamic and challenging encounters throughout the adventure.
-            </p>
-          </div>
+
+        <a href="https://play.unity.com/en/games/fff19bb8-e014-4e6b-b87f-69ab2cfb4caa/webgl-builds" target="_blank"
+            class="card-link-button">Play Here</a>
+
+        <p class="description">3D open-world fantasy game where players take on the role of a mage on an epic journey to
+            defeat a dragon. Players can explore a vast world, gain new powers, and battle various enemies to complete
+            the ultimate quest. Developed using Unity Engine, the game features a save and checkpoint system utilizing
+            JSON for data management. Additionally, it incorporates an enemy state machine and pathfinding using
+            waypoints, ensuring dynamic and challenging encounters throughout the adventure.</p>
+    </div>
+
+    <div class="card active" id="card-1">
+        <h2>Hypercasual Level RNG</h2>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Qy1NE4YSA88?si=WRP5OjeSs_P0hXMC"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-      </div>
 
-      <div class="cartao-pokedev tipo-tecnologico" id="cartao-cyberdev">
-        <div class="cartao-topo">
-          <div class="detalhes">
-            <h2 class="nome">Hypercasual Level RNG</h2>
-          </div>
-          <span class="tipo">
-            <a href="https://play.unity.com/en/games/e348687f-aeb5-40c5-84cf-381f1a00e237/webgl-builds"
-              target="_blank">Play Here</a>
-          </span>
-          <div class="cartao-imagem">
-            <iframe width="270" height="150" src="https://www.youtube.com/embed/Qy1NE4YSA88?si=OTZ1D30SsuDr9oIn"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="cartao-informacoes">
-          <div class="descricao">
-            <h3>Description</h3>
-            <p>
-              A 3D hyper-casual game with randomly generated platforms, traps, and enemies. Players must navigate
-              through these obstacles to reach the end of the level and win the game. Developed by Unity Engine.
-            </p>
-          </div>
-        </div>
-      </div>
+        <a href="https://play.unity.com/en/games/e348687f-aeb5-40c5-84cf-381f1a00e237/webgl-builds" target="_blank"
+            class="card-link-button">Play Here </a>
 
-
-
+        <p class="description">A 3D hyper-casual game with randomly generated platforms, traps, and enemies. Players
+            must navigate through these obstacles to reach the end of the level and win the game. Developed by Unity
+            Engine.</p>
     </div>
 
 
 
-    <nav class="listagem">
-      <ul>
-        <li class="pokedev ativo" id="devchu">
 
-          <span>Infinite Spaceshooter</span>
-        </li>
-
-        <li class="pokedev" id="scriptle">
-          <span>Quiz Game</span>
-        </li>
-
-        <li class="pokedev" id="codevee">
-
-          <span>Survivor's Legacy</span>
-        </li>
-
-        <li class="pokedev" id="psycoder">
-
-          <span>Infinity Shooter</span>
-        </li>
-
-        <li class="pokedev" id="charmandev">
-
-          <span>Building Village</span>
-        </li>
-
-        <li class="pokedev" id="devlypuff">
-
-          <span>The Brave</span>
-        </li>
-
-        <li class="pokedev oculto" id="dragodev">
-          <span>Aeroasteroids Mobile</span>
-        </li>
-
-        <li class="pokedev oculto" id="spacedev">
-          <span>Bomber Box</span>
-        </li>
-
-        <li class="pokedev oculto" id="monsterdev">
-          <span>Diana's World</span>
-        </li>
-
-        <li class="pokedev oculto" id="cyberdev">
-          <span>Hypercasual Level RNG</span>
-        </li>
-
-      </ul>
-    </nav>
-
-
+    <div class="navigation">
+        <button class="button" id="prev-button" disabled>Previous</button>
+        <button class="button" id="next-button">Next</button>
     </div>
 
-    <button class="btn-mostrar-projetos">Show More</button>
-
-  </main>
-  <script src="./src/js/index.js"></script>
 </body>
 
 </html>

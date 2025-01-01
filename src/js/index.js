@@ -1,50 +1,30 @@
-const listaSelecaoPokedevs = document.querySelectorAll(".pokedev");
+const cards = document.querySelectorAll('.card');
+        const prevButton = document.getElementById('prev-button');
+        const nextButton = document.getElementById('next-button');
 
-listaSelecaoPokedevs.forEach(pokedev => {
-	pokedev.addEventListener("click", () => {
-		esconderCartaoPokedev();
+        let currentIndex = 0;
 
-		const idPokedevSelecionado = mostrarCartaoPokedevSelecionado(pokedev);
+        function updateCards() {
+            cards.forEach((card, index) => {
+                card.classList.toggle('active', index === currentIndex);
+            });
+            prevButton.disabled = currentIndex === 0;
+            nextButton.disabled = currentIndex === cards.length - 1;
+        }
 
-		desativarPokedevNaListagem();
-		ativarPokedevSelecionadoNaListagem(idPokedevSelecionado);
+        prevButton.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCards();
+            }
+        });
 
-	})
-})
+        nextButton.addEventListener('click', () => {
+            if (currentIndex < cards.length - 1) {
+                currentIndex++;
+                updateCards();
+            }
+        });
 
+        updateCards();
 
-function ativarPokedevSelecionadoNaListagem(idPokedevSelecionado) {
-	const pokedevSelecionadoNaListagem = document.getElementById(idPokedevSelecionado);
-	pokedevSelecionadoNaListagem.classList.add("ativo");
-}
-
-function desativarPokedevNaListagem() {
-	const pokedevAtivoNaListagem = document.querySelector(".ativo");
-	pokedevAtivoNaListagem.classList.remove("ativo");
-}
-
-function mostrarCartaoPokedevSelecionado(pokedev) {
-	const idPokedevSelecionado = pokedev.attributes.id.value;
-	const idDoCartaoPokedevParaAbrir = "cartao-" + idPokedevSelecionado;
-	const cartaoPokedevParaAbrir = document.getElementById(idDoCartaoPokedevParaAbrir);
-	cartaoPokedevParaAbrir.classList.add("aberto");
-	return idPokedevSelecionado;
-}
-
-function esconderCartaoPokedev() {
-	const cartaoPokedevAberto = document.querySelector(".aberto");
-	cartaoPokedevAberto.classList.remove("aberto");
-}
-
-document.querySelector('.btn-mostrar-projetos').addEventListener('click', function() {
-	// Seleciona todos os itens que estão ocultos
-	const itensOcultos = document.querySelectorAll('.pokedev.oculto');
-  
-	// Para cada item oculto, remove a classe 'oculto' para mostrá-los
-	itensOcultos.forEach(item => {
-	  item.classList.remove('oculto');
-	});
-  
-	// Opcional: Esconder o botão após revelar os itens
-	this.style.display = 'none';
-  });

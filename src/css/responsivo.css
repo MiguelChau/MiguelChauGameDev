@@ -1,40 +1,21 @@
-@media(max-width: 750px){
-    .pokedevs{
-        flex-direction: column;
-        align-items: center;
+@media(max-width:620px) {
+    .cabecalho {
         padding: 30px 0;
     }
 
-    .cartao-pokedev{
-        max-width: 300px;
+    .jogos-slider {
+        padding: 0 15px;
+        gap: 10px;
     }
 
-    .cartao-pokedev .cartao-informacoes{
-        padding: 60px 30px 30px;
-        margin-top: -50px;
+    .btn-seta {
+        width: 20px;
+        height: 20px;
+        padding: 20px;
     }
 
-    .cartao-pokedev .cartao-informacoes h3{
-        font-size: 16px;
-    }
+    .lista-.jogos {
+        height: 480px;
 
-    .listagem{
-        max-width: 360px;
     }
-
-    .listagem .pokedev{
-        width: 45%;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        margin-bottom: 0;
-        border-radius: 8px;
-    }
-
-    .listagem ul{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-
 }

@@ -16,10 +16,18 @@ body {
 
 h1 {
     font-size: 40px;
-    margin: 20px 0;
+    margin: 0px;
     color: white;
     text-transform: uppercase; 
     letter-spacing: 0.5px;
+}
+
+.subtitle{
+color: white;
+font-size: 20px;
+letter-spacing: 0.5px;
+margin-bottom: 20px;
+margin-top: 5px;
 }
 
 .description {
